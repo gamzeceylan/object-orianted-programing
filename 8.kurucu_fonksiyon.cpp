@@ -32,6 +32,7 @@ Nokta::Nokta(){
     // nesne ilk olustugunda baslangic degeri veriyoruz
     x=0;
     y=0;
+
 }
 /* 
     eger iki degiskene de default bir deger verirsen bu fonksiyon parametresiz kurucu gibi davranir
@@ -59,21 +60,6 @@ int Nokta::getX(){
 int Nokta::getY(){
     return y;
 }
-void Nokta::setX(int _x){
-    x=_x;
-}
-void Nokta::setY(int _y){
-    if(_y > 5)
-        y=_y;
-    else
-        y = 2;
-}
-
-
-void Nokta::ekranaYaz(){
-     cout<< x << "," << y <<endl;
-}
-
 
 
 int main(){     
